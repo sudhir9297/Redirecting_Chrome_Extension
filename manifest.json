@@ -1,0 +1,24 @@
+{
+ "manifest_version":2,
+ "name":"Redirecting",
+ "version":"0.1.0",
+ "description":"Redirecting if page containg Video string in title or meta description",
+
+ "browser_action": {
+    "default_title": "Redirect" 
+  },
+
+  "icons": { 
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png" },
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
+
+ "permissions": [
+    "activeTab"
+  ]
+}
